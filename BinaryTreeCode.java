@@ -1,4 +1,5 @@
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -170,6 +171,35 @@ public class BinaryTreeCode {
         return new TreeInfo(height, diameter);
     }
 
+    // ===================== Tree to Array =====================
+    // Converts binary tree to array using level order traversal
+    public static ArrayList<Integer> treeToArray(Node root) {
+
+        ArrayList<Integer> arr = new ArrayList<>();
+
+        if (root == null) {
+            return arr;
+        }
+
+        Queue<Node> q = new LinkedList<>();
+        q.add(root);
+
+        while (!q.isEmpty()) {
+            Node curr = q.remove();
+            arr.add(curr.data);
+
+            if (curr.left != null) {
+                q.add(curr.left);
+            }
+
+            if (curr.right != null) {
+                q.add(curr.right);
+            }
+        }
+
+        return arr;
+    }
+
     // ===================== Main Method =====================
     public static void main(String[] args) {
 
@@ -194,5 +224,7 @@ public class BinaryTreeCode {
         System.out.println("Height: " + height(root));
 
         System.out.println("Diameter: " + diameter(root).diameter);
+
+        System.out.println("Tree to Array: " + treeToArray(root));
     }
 }
