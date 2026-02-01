@@ -1,0 +1,6 @@
+Hello Java File Handling
+This is a simple file example.
+This line is appended to the file.
+Learning Java File Handling.
+This line is appended to the file.
+Learning Java File Handling.

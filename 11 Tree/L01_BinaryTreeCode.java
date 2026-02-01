@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 // ===================== Binary Tree Code =====================
-public class BinaryTreeCode {
+public class L01_BinaryTreeCode {
 
     // ===================== Node Class =====================
     // Public static nested class so it can be used in public methods

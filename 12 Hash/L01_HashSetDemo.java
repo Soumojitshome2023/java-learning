@@ -3,7 +3,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 
 // ===================== HashSet Demo =====================
-public class HashSetDemo {
+public class L01_HashSetDemo {
 
     public static void main(String[] args) {
 

@@ -2,7 +2,7 @@
 import java.util.ArrayList;
 
 // ===================== Binary Search Tree =====================
-public class BinarySearchTree {
+public class L02_BinarySearchTree {
 
     // ===================== Node Class =====================
     public static class Node {

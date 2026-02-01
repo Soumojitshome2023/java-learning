@@ -2,7 +2,7 @@
 
 import java.util.*;
 
-public class MyHashMapCode {
+public class L03_MyHashMapCode {
 
     static class ManualHashMap<K, V> { // generics
 

@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.Set;
 
 // ===================== HashMap Demo =====================
-public class HashMapDemo {
+public class L02_HashMapDemo {
 
     public static void main(String[] args) {
 
