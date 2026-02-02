@@ -77,6 +77,60 @@ public class L01_Strings {
         System.out.println("Uppercase: " + str.toUpperCase());
         System.out.println("Lowercase: " + str.toLowerCase());
 
+        // ===================== STRING CONTAINS =====================
+        System.out.print("\nEnter a word to check (contains): ");
+        String checkWord = sc.nextLine();
+
+        if (str.contains(checkWord)) {
+            System.out.println("String contains the word");
+        } else {
+            System.out.println("String does NOT contain the word");
+        }
+
+        // ===================== STRING startsWith() =====================
+        // Checks if string starts with given prefix
+        System.out.print("\nEnter prefix to check (startsWith): ");
+        String prefix = sc.nextLine();
+
+        if (str.startsWith(prefix)) {
+            System.out.println("String starts with \"" + prefix + "\"");
+        } else {
+            System.out.println("String does NOT start with \"" + prefix + "\"");
+        }
+
+        // ===================== STRING endsWith() =====================
+        // Checks if string ends with given suffix
+        System.out.print("\nEnter suffix to check (endsWith): ");
+        String suffix = sc.nextLine();
+
+        if (str.endsWith(suffix)) {
+            System.out.println("String ends with \"" + suffix + "\"");
+        } else {
+            System.out.println("String does NOT end with \"" + suffix + "\"");
+        }
+
+        // ===================== STRING isEmpty() =====================
+        // Checks whether string length is 0
+        if (str.isEmpty()) {
+            System.out.println("\nString is empty");
+        } else {
+            System.out.println("\nString is NOT empty");
+        }
+
+        // ===================== STRING indexOf() =====================
+        // indexOf() returns the index of first occurrence of a character or substring
+        // If not found, it returns -1
+        System.out.print("\nEnter a word to find index: ");
+        String findWord = sc.nextLine();
+
+        int index = str.indexOf(findWord);
+
+        if (index != -1) {
+            System.out.println("Word found at index: " + index);
+        } else {
+            System.out.println("Word not found in the string");
+        }
+
         // ===================== STRING SPLIT =====================
         // split() breaks string into parts based on delimiter
         System.out.println("\n--- Using split() ---");

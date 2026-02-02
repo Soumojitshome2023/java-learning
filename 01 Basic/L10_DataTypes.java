@@ -6,32 +6,52 @@ public class L10_DataTypes {
     public static void main(String[] args) {
 
         // ===================== Primitive Data Types =====================
-        // Integer types
-        byte smallNumber = 10;        // 1 byte
-        short shortNumber = 200;      // 2 bytes
-        int normalNumber = 1000;      // 4 bytes (most commonly used)
-        long bigNumber = 100000L;     // 8 bytes (L suffix is required)
+        // ===================== Integer Data Types =====================
+        byte byteValue = 10;
+        // Size: 1 byte (8 bits)
+        // Range: -128 to 127
 
-        // Decimal (floating-point) types
-        float price = 99.99f;         // 4 bytes (f suffix is required)
-        double pi = 3.14159;          // 8 bytes (default for decimals)
+        short shortValue = 200;
+        // Size: 2 bytes (16 bits)
+        // Range: -32,768 to 32,767
 
-        // Character type
-        char grade = 'A';             // Stores a single character
+        int intValue = 1000;
+        // Size: 4 bytes (32 bits)
+        // Range: -2^31 to (2^31 - 1)
 
-        // Boolean type
-        boolean isJavaFun = true;     // Stores true or false
+        long longValue = 100000L;
+        // Size: 8 bytes (64 bits)
+        // Range: -2^63 to (2^63 - 1)
+
+        // ===================== Decimal (Floating-Point) Data Types =====================
+        float floatValue = 99.99f;
+        // Size: 4 bytes (32 bits)
+        // Range: ~1.4E-45 to ~3.4E38
+
+        double doubleValue = 3.14159;
+        // Size: 8 bytes (64 bits)
+        // Range: ~4.9E-324 to ~1.7E308
+
+        // ===================== Character Data Type =====================
+        char charValue = 'A';
+        // Size: 2 bytes
+        // Range: 0 to 65,535 (Unicode characters)
+
+        // ===================== Boolean Data Type =====================
+        boolean isJavaFun = true;
+        // Size: JVM dependent (generally 1 bit)
+        // Range: true or false
 
         // ===================== Printing Values =====================
-        System.out.println("Byte value: " + smallNumber);
-        System.out.println("Short value: " + shortNumber);
-        System.out.println("Int value: " + normalNumber);
-        System.out.println("Long value: " + bigNumber);
+        System.out.println("Byte value: " + byteValue);
+        System.out.println("Short value: " + shortValue);
+        System.out.println("Int value: " + intValue);
+        System.out.println("Long value: " + longValue);
 
-        System.out.println("Float value: " + price);
-        System.out.println("Double value: " + pi);
+        System.out.println("Float value: " + floatValue);
+        System.out.println("Double value: " + doubleValue);
 
-        System.out.println("Char value: " + grade);
+        System.out.println("Char value: " + charValue);
         System.out.println("Boolean value: " + isJavaFun);
     }
 }
