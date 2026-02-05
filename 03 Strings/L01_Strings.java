@@ -131,6 +131,52 @@ public class L01_Strings {
             System.out.println("Word not found in the string");
         }
 
+        // ===================== STRING lastIndexOf() =====================
+        // Returns index of last occurrence, -1 if not found
+        System.out.print("\nEnter word to find last index: ");
+        String lastWord = sc.nextLine();
+
+        int lastIdx = str.lastIndexOf(lastWord);
+
+        if (lastIdx != -1) {
+            System.out.println("Last occurrence at index: " + lastIdx);
+        } else {
+            System.out.println("Word not found");
+        }
+
+        // ===================== STRING indexOf(fromIndex) =====================
+        // Search substring starting from given index
+        System.out.print("\nEnter word to find: ");
+        String search = sc.nextLine();
+
+        System.out.print("Enter starting index: ");
+        int fromIndex = sc.nextInt();
+        sc.nextLine(); // consume newline
+
+        int idxFrom = str.indexOf(search, fromIndex);
+
+        if (idxFrom != -1) {
+            System.out.println("Word found at index: " + idxFrom);
+        } else {
+            System.out.println("Word not found from given index");
+        }
+
+        // ===================== STRING lastIndexOf(fromIndex) =====================
+        System.out.print("\nEnter word to find from end: ");
+        String backWord = sc.nextLine();
+
+        System.out.print("Enter ending index: ");
+        int endIndex = sc.nextInt();
+        sc.nextLine(); // consume newline
+
+        int backIdx = str.lastIndexOf(backWord, endIndex);
+
+        if (backIdx != -1) {
+            System.out.println("Last occurrence before index at: " + backIdx);
+        } else {
+            System.out.println("Word not found");
+        }
+
         // ===================== STRING SPLIT =====================
         // split() breaks string into parts based on delimiter
         System.out.println("\n--- Using split() ---");
@@ -150,6 +196,23 @@ public class L01_Strings {
         System.out.println("\nLanguages list:");
         for (String lang : languages) {
             System.out.println(lang);
+        }
+
+        // ===================== STRING replace() =====================
+        System.out.println("After replace: " + str.replace("a", "@"));
+
+        // ===================== STRING trim() =====================
+        System.out.println("After trim: " + str.trim());
+
+        // ===================== STRING equalsIgnoreCase() =====================
+        // Compares strings ignoring case differences
+        System.out.print("\nEnter a string to compare (ignore case): ");
+        String strIgnore = sc.nextLine();
+
+        if (str.equalsIgnoreCase(strIgnore)) {
+            System.out.println("Strings are equal (ignoring case)");
+        } else {
+            System.out.println("Strings are NOT equal (ignoring case)");
         }
 
         // Close Scanner

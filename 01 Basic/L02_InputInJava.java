@@ -29,6 +29,16 @@ public class L02_InputInJava {
         System.out.println("Age        : " + age);
         System.out.println("Percentage : " + percentage);
 
+        System.out.print("Enter an integer value: ");
+        boolean isInt = sc.hasNextInt();
+
+        if (isInt) {
+            int num = sc.nextInt();
+            System.out.println("You entered an integer: " + num);
+        } else {
+            System.out.println("You did NOT enter an integer.");
+        }
+
         // Close the Scanner (good practice)
         sc.close();
     }
