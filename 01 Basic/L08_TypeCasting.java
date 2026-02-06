@@ -33,6 +33,13 @@ class L08_TypeCasting {
         System.out.println("\ndouble to String:");
         System.out.println(strPrice);
 
+        // ===================== long to String =====================
+        long bigNum = 123456789L;
+        String strLong = Long.toString(bigNum);
+
+        System.out.println("\nlong to String:");
+        System.out.println(strLong);
+
         // ===================== String to int =====================
         String str1 = "123";
         int n1 = Integer.parseInt(str1);
@@ -47,12 +54,33 @@ class L08_TypeCasting {
         System.out.println("\nString to double:");
         System.out.println(n2);
 
-        // ===================== char to int =====================
+        // ===================== String to long =====================
+        String str3 = "987654321";
+        long n3 = Long.parseLong(str3);
+
+        System.out.println("\nString to long:");
+        System.out.println(n3);
+
+        // ===================== char to int (ASCII value) =====================
         char ch = 'A';
         int asciiValue = ch;
 
         System.out.println("\nchar to int (ASCII value):");
         System.out.println(asciiValue);
+
+        // ===================== char digit to int (numeric value) =====================
+        char digit = '7';
+        int digitValue = digit - '0';
+
+        System.out.println("\nchar digit to int:");
+        System.out.println(digitValue);
+
+        // ===================== char to long =====================
+        char ch2 = 'B';
+        long longValue = ch2;
+
+        System.out.println("\nchar to long:");
+        System.out.println(longValue);
 
         // ===================== int to char =====================
         int ascii = 66;
@@ -60,5 +88,12 @@ class L08_TypeCasting {
 
         System.out.println("\nint to char:");
         System.out.println(character);
+
+        // ===================== long to char =====================
+        long asciiLong = 67;
+        char character2 = (char) asciiLong;
+
+        System.out.println("\nlong to char:");
+        System.out.println(character2);
     }
 }
