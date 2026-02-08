@@ -1,6 +1,7 @@
 // File Name: L01_Arrays.java
 // Topic: Arrays in Java (1D Array)
 
+import java.util.Arrays;
 import java.util.Scanner; // Import Scanner for input
 
 public class L01_Arrays {
@@ -68,5 +69,14 @@ public class L01_Arrays {
 
         // Close Scanner
         sc.close();
+
+        // ===================== SORT ARRAY =====================
+        Arrays.sort(arr);
+        System.out.println("\nSorted array:");
+        for (int i = 0; i < n; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+
     }
 }

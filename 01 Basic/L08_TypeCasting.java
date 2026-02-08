@@ -82,12 +82,19 @@ class L08_TypeCasting {
         System.out.println("\nchar to long:");
         System.out.println(longValue);
 
-        // ===================== int to char =====================
-        int ascii = 66;
-        char character = (char) ascii;
+        // ===================== int to char (ASCII value) =====================
+        int ascii = 65;
+        char ch1 = (char) ascii;   // explicit casting using ASCII value
 
-        System.out.println("\nint to char:");
-        System.out.println(character);
+        System.out.println("\nint to char (ASCII value):");
+        System.out.println(ch1);  // Output: A
+
+        // ===================== int to char (digit to character) =====================
+        int digit2 = 7;
+        char ch3 = (char) (digit2 + '0');  // converting numeric digit to character
+
+        System.out.println("\nint to char (digit character):");
+        System.out.println(ch3);  // Output: 7
 
         // ===================== long to char =====================
         long asciiLong = 67;
@@ -95,5 +102,14 @@ class L08_TypeCasting {
 
         System.out.println("\nlong to char:");
         System.out.println(character2);
+
+        // ===================== char to String =====================
+        char ch4 = 'Z';
+        String strChar = Character.toString(ch4);
+        // OR: String strChar = String.valueOf(ch4);
+
+        System.out.println("\nchar to String:");
+        System.out.println(strChar);
+
     }
 }
